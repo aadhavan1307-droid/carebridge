@@ -1,0 +1,30 @@
+{
+  "name": "carebridge",
+  "version": "2.0.0",
+  "description": "CareBridge: Human-Centered Emergency Care & Classical AI Decision Support System",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "db:reset-data": "node backend/database/reset-data.js",
+    "db:populate": "node backend/database/populate-test-data.js",
+    "db:legacy-seed": "node backend/database/seed.js",
+    "test": "node backend/tests/test_runner.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "playwright": "^1.63.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vite": "^6.0.7"
+  }
+}
